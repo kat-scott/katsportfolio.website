@@ -1,0 +1,63 @@
+//parallax height
+.parallax-container {
+  height: 600px;
+}
+
+//nav
+nav {
+  background-color: #EC407A !important;
+}
+
+hr {
+  border-color: #EC407A;
+  background-color: #EC407A;
+  border: 0;
+  height: 3px;
+  width: 30%;
+  margin: 15px 0;
+  display: block;
+
+  @media screen and (max-width: 992px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 600px) {
+    width: 70%;
+  }
+}
+
+.hero-content {
+  position: relative;
+  top: 30%;
+
+  h1 {
+    color: #F06292 !important;
+    margin-bottom: 0;
+  }
+
+  h5 {
+    color: #fff !important;
+  }
+}
+
+.is-checked {
+  background-color: #EC407A !important;
+
+  &:hover {
+    background-color: #F06292;
+  }
+}
+
+.work-btn {
+  background-color: #37474F;
+
+  &:hover {
+    background-color: #90A4AE;
+  }
+  @media screen and (max-width: 600px) {
+    display: block;
+  }
+}
+
+.footer-copyright {
+  background-color: #ee6e73 !important;
+}
