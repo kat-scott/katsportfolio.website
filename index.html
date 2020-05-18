@@ -9,10 +9,15 @@
       <!-- Custom Stylesheet -->
       <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
        <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style type="text/css">
+        .btn-large {
+          margin: 5px;
+        }
+      </style>
     </head>
 
     <body>
@@ -21,11 +26,11 @@
       <div class="navbar-fixed red accent-3">
         <nav>
           <div class="nav-wrapper container">
-            <a href="#" class="brand-logo" style="padding-left: 15px;">K.S.</a>
+            <a href="#" class="brand-logo">Kat Scott</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="https://www.linkedin.com/in/katherineelizabethscott" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-              <li><a href="https://github.com/kat-scott" target="_blank"><i class="fa fa-github-alt" aria-hidden="true" target="_blank"></i></a></li>
-              <li><a href="http://codepen.io/kyotokat/" target="_blank"><i class="fa fa-codepen" aria-hidden="true" target="_blank"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/katscottux/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href="https://github.com/kat-scott?tab=repositories" target="_blank">GitHub <i class="fa fa-github-alt" aria-hidden="true" target="_blank"></i></a></li>
+              <li><a href="http://codepen.io/kyotokat/" target="_blank">Codepen <i class="fa fa-codepen" aria-hidden="true" target="_blank"></i></a></li>
             </ul>
           </div>
         </nav>
@@ -44,14 +49,16 @@
         </div>
       </div> -->
 
-      <div class="grey lighten-3 center">
+      <div class="white lighten-3 center">
         <div class="section container">
           <div class="row">
             <div class="col s12 button-group filters-button-group" id="filters">
               <a class="waves-effect waves-light btn-large btn work-btn is-checked" data-filter="*">Show All</a>
+              <a class="waves-effect waves-light btn-large work-btn btn design-btn" data-filter=".php-project">PHP Project</a>
               <a class="waves-effect waves-light btn-large work-btn btn design-btn" data-filter=".wordpress">WordPress Website</a>
               <a class="waves-effect waves-light btn-large work-btn btn website-btn" data-filter=".landing-page">Landing Page</a>
               <a class="waves-effect waves-light btn-large work-btn btn landing-page-btn" data-filter=".other">Other</a>
+              <a class="waves-effect waves-light btn-large work-btn btn landing-page-btn" data-filter=".dev-design">Dev + Design</a>
             </div>
           </div>
         </div>
@@ -59,7 +66,7 @@
 
 
         <!--Work Section-->
-        <div class="grey lighten-3">
+        <div class="white lighten-3">
         <div class="work container">
           <div class="section">
             <div class="row">
@@ -75,11 +82,36 @@
                   </div>
                 </div>
               </div> -->
-              <div class="col offset-l2 s12 l8 work-item wordpress">
+
+              <div class="col s12 l6 work-item php-project dev-design">
+                <div class="card white lighten-3 hoverable">
+                  <div class="card-content">
+                    <span class="card-title">Disc Rewind</span>
+                    <p>PHP based project. Disc Rewind is a website for purchasing used dvds. Utilizes PHP to pull, edit and delete movies from the database.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="disc-rewind/" target="_blank" class="waves-effect waves-light btn-large">View Project</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 l6 work-item other dev-design">
+                <div class="card white lighten-3 hoverable">
+                  <div class="card-content">
+                    <span class="card-title">Oishi Sushi</span>
+                    <p>Personal Project. The concept is designing and developing a website for a sushi and hibachi restaurant. </p>
+                  </div>
+                  <div class="card-action">
+                    <a href="oishi-sushi/" target="_blank" class="waves-effect waves-light btn-large">View Project</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 l6 work-item wordpress">
                 <div class="card white lighten-3 hoverable">
                   <div class="card-content">
                     <span class="card-title">Indiana Veins Specialists</span>
-                    <p>Indiana Vein Specialists is a physician owned medical practice specializing in the treatment of venous disease. They provide comprehensive, office-based, and minimally invasive care of venous insufficiency.</p>
+                    <p>Client of Fat Atom Marketing. WordPress based website. Assisted designer with responsive design.</p>
                   </div>
                   <div class="card-action">
                     <a href="https://indyveins.com/" target="_blank" class="waves-effect waves-light btn-large">Visit Live Site</a>
@@ -87,11 +119,11 @@
                 </div>
               </div>
 
-              <div class="col offset-l2 s12 l8 work-item wordpress">
+              <div class="col s12 l6 work-item wordpress landing-page">
                 <div class="card white lighten-3 hoverable">
                   <div class="card-content">
                     <span class="card-title">Transitions Indy</span>
-                    <p>Indiana Vein Specialists is a physician owned medical practice specializing in the treatment of venous disease. They provide comprehensive, office-based, and minimally invasive care of venous insufficiency.</p>
+                    <p>Client of Fat Atom Marketing. WordPress based website. I developed this specific page for the website.</p>
                   </div>
                   <div class="card-action">
                     <a href="https://transitionsindy.com/artas/" target="_blank" class="waves-effect waves-light btn-large">Visit Live Site</a>
@@ -99,14 +131,62 @@
                 </div>
               </div>
 
-              <div class="col offset-l2 s12 l8 work-item dev-design">
+              <div class="col s12 l6 work-item wordpress">
                 <div class="card white lighten-3 hoverable">
                   <div class="card-content">
-                    <span class="card-title">Transitions Indy</span>
-                    <p>Indiana Vein Specialists is a physician owned medical practice specializing in the treatment of venous disease. They provide comprehensive, office-based, and minimally invasive care of venous insufficiency.</p>
+                    <span class="card-title">Transitions Indy - WooCommerce Integration</span>
+                    <p>Client of Fat Atom Marketing. WordPress based website. This client requested WooCommerce integration to sell their hair products online.</p>
                   </div>
                   <div class="card-action">
-                    <a href="https://transitionsindy.com/artas/" target="_blank" class="waves-effect waves-light btn-large">Visit Live Site</a>
+                    <a href="https://transitionsindy.com/shop/" target="_blank" class="waves-effect waves-light btn-large">Visit Live Site</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 l6 work-item other dev-design">
+                <div class="card white lighten-3 hoverable">
+                  <div class="card-content">
+                    <span class="card-title">Super Power Supply</span>
+                    <p>Company: Dallas Reed Corporation. Magento based PHP e-commerce website.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://www.superpowersupply.com/" target="_blank" class="waves-effect waves-light btn-large">Visit Live Site</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 l6 work-item wordpress">
+                <div class="card white lighten-3 hoverable">
+                  <div class="card-content">
+                    <span class="card-title">Powershield Coatings</span>
+                    <p>Client of Fat Atom Marketing. WordPress based website.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="http://powershieldcoatings.com/" target="_blank" class="waves-effect waves-light btn-large">Visit Live Site</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 l6 work-item landing-page">
+                <div class="card white lighten-3 hoverable">
+                  <div class="card-content">
+                    <span class="card-title">ILCO - Manhattan Project</span>
+                    <p>Client of Fat Atom Marketing. Landing page for a marketing campaign.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://www.indianalimestonecompany.com/manhattan-project/" target="_blank" class="waves-effect waves-light btn-large">Visit Live Site</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 l6 work-item wordpress other">
+                <div class="card white lighten-3 hoverable">
+                  <div class="card-content">
+                    <span class="card-title">ILCO - Working with SVGs</span>
+                    <p>Client of Fat Atom Marketing. WordPress based website. I worked on a few pages of this website, this one I enjoyed because of the hover effect on the map. </p>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://www.indianalimestonecompany.com/fabricators/contact-us/" target="_blank" class="waves-effect waves-light btn-large">Visit Live Site</a>
                   </div>
                 </div>
               </div>
@@ -114,15 +194,6 @@
             </div>
           </div>
         </div>
-
-        <footer class="page-footer white">
-         <div class="footer-copyright">
-           <div class="container center">
-              <p><i class="fa fa-envelope-open" aria-hidden="true"></i> info@katscott.me</p>
-              <p><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Katherine Scott</p>
-           </div>
-         </div>
-       </footer>
 
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

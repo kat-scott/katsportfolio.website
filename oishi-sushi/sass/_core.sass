@@ -1,0 +1,148 @@
+::-moz-selection
+	background: $primary_color
+	color: #fff
+
+::selection
+	background: $primary_color
+	color: #fff
+
+*
+	box-sizing: border-box
+	outline-color: $primary_color
+
+.clb:after
+	content: ''
+	display: block
+	clear: both
+	height: 0
+
+img
+	max-width: 100%
+	height: auto
+
+html, body
+	margin: 0
+	padding: 0
+	overflow-x: hidden
+
+html
+	body
+		transition: all .2s ease-in-out
+@media ( max-width: $query_medium )
+	.nav-shown body
+		transform: translate(-250px)
+	.nav-shown,
+	.nav-shown body
+		overflow: visible
+
+body
+	background-color: #fff
+	min-width: 320px
+	color: $primary_color
+	font-family: $primary_font
+	font-weight: $font_weight
+	font-size: $reg_font_size
+	line-height: $line_height
+	-webkit-font-smoothing: antialiased
+
+.sr-only
+	display: none
+
+h1, h2, h3, h4, h5 ,h6
+	margin: 15px auto
+	color: $title_color
+	font-family: $title_font
+	font-weight: $font_weight_title
+	line-height: $line_height_title
+.main-title
+	font-size: 70px
+	text-transform: uppercase
+	font-weight: bold
+	a
+		text-decoration: none
+	@media (max-width: $query_small)
+		font-size: 50px
+	@media (max-width: $query_xsmall)
+		font-size: 30px
+.body-section h2
+	font-size: 36px
+h3
+	font-size: 28px
+h4
+	font-size: 18px
+	color: $accent_color_2
+	font-weight: bold
+	text-transform: uppercase
+
+.callout
+	font-size: 30px
+	color: #939395
+
+
+h1, h2, h3, h4, h5, h6, p, ul, ol
+	&:first-child
+		margin-top: 0
+
+	&:last-child
+		margin-bottom: 0
+
+.inner, .container
+	max-width: $query_medium
+	margin: 0 auto
+.container
+	padding: 0 60px
+
+@media (max-width: $query_small)
+	.container
+		padding: 0 10px
+@media (max-width: $query_xsmall)
+	.container
+		padding: 0
+
+.row.no-gutters
+	margin-right: 0
+	margin-left: 0
+
+a
+	color: $title_color
+	transition: all $transition_fast ease-in-out
+
+	&:hover
+		color: #000
+		text-decoration: none
+
+p, .spaced
+	&:last-child
+		margin-bottom: 0
+.double-spaced
+	margin: 30px 0
+
+input[type=text], input[type=email], textarea
+	background-color: #ebebeb
+	padding: 10px
+	border: 0
+	font-size: 16px
+
+.button-center
+	text-align: center
+.button, input[type=submit], a.button, button
+	display: inline-block
+	background-color: $accent_color_1
+	padding: 8px 15px
+	border: 0
+	color: #fff
+	font-size: 20px
+	font-family: $title_font
+	font-weight: bold
+	cursor: pointer
+	text-decoration: none
+	transition: all $transition_fast ease-in-out
+	&.button-blue
+		background-color: $secondary_color
+	&:hover
+		background-color: #000
+	&.button-big
+		font-size: 30px
+
+ul
+	padding-left: 0
